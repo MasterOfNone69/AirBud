@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75682F29F7B38F84024B3DD0 /* Pods_AirBud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE4348C81C719DF153777E8 /* Pods_AirBud.framework */; };
+		E586F70321694B4A00209AE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586F70221694B4A00209AE5 /* AppDelegate.swift */; };
+		E586F70521694B4A00209AE5 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586F70421694B4A00209AE5 /* HomeVC.swift */; };
+		E586F70821694B4A00209AE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E586F70621694B4A00209AE5 /* Main.storyboard */; };
+		E586F70A21694B4B00209AE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E586F70921694B4B00209AE5 /* Assets.xcassets */; };
+		E586F70D21694B4B00209AE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E586F70B21694B4B00209AE5 /* LaunchScreen.storyboard */; };
+		E586F71821694B4B00209AE5 /* AirBudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586F71721694B4B00209AE5 /* AirBudTests.swift */; };
+		E586F72321694B4B00209AE5 /* AirBudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586F72221694B4B00209AE5 /* AirBudUITests.swift */; };
+		E586F7342169550000209AE5 /* CurrentAir.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586F7332169550000209AE5 /* CurrentAir.swift */; };
+		E586F736216957D200209AE5 /* AirService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586F735216957D200209AE5 /* AirService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E586F71421694B4B00209AE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E586F6F721694B4A00209AE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E586F6FE21694B4A00209AE5;
+			remoteInfo = AirBud;
+		};
+		E586F71F21694B4B00209AE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E586F6F721694B4A00209AE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E586F6FE21694B4A00209AE5;
+			remoteInfo = AirBud;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		240C026AC430CC218D277B79 /* Pods-AirBud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirBud.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirBud/Pods-AirBud.release.xcconfig"; sourceTree = "<group>"; };
+		2AE4348C81C719DF153777E8 /* Pods_AirBud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirBud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0259BD9B0D1CAF5FDAB3E45 /* Pods-AirBud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirBud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirBud/Pods-AirBud.debug.xcconfig"; sourceTree = "<group>"; };
+		E586F6FF21694B4A00209AE5 /* AirBud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirBud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E586F70221694B4A00209AE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E586F70421694B4A00209AE5 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		E586F70721694B4A00209AE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E586F70921694B4B00209AE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E586F70C21694B4B00209AE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E586F70E21694B4B00209AE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E586F71321694B4B00209AE5 /* AirBudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirBudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E586F71721694B4B00209AE5 /* AirBudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirBudTests.swift; sourceTree = "<group>"; };
+		E586F71921694B4B00209AE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E586F71E21694B4B00209AE5 /* AirBudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirBudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E586F72221694B4B00209AE5 /* AirBudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirBudUITests.swift; sourceTree = "<group>"; };
+		E586F72421694B4B00209AE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E586F7332169550000209AE5 /* CurrentAir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAir.swift; sourceTree = "<group>"; };
+		E586F735216957D200209AE5 /* AirService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E586F6FC21694B4A00209AE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75682F29F7B38F84024B3DD0 /* Pods_AirBud.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E586F71021694B4B00209AE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E586F71B21694B4B00209AE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		119B8FF3146DF4E547EEF6ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0259BD9B0D1CAF5FDAB3E45 /* Pods-AirBud.debug.xcconfig */,
+				240C026AC430CC218D277B79 /* Pods-AirBud.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83385BC8EA458AFDB2A73528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AE4348C81C719DF153777E8 /* Pods_AirBud.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E586F6F621694B4A00209AE5 = {
+			isa = PBXGroup;
+			children = (
+				E586F70121694B4A00209AE5 /* AirBud */,
+				E586F71621694B4B00209AE5 /* AirBudTests */,
+				E586F72121694B4B00209AE5 /* AirBudUITests */,
+				E586F70021694B4A00209AE5 /* Products */,
+				119B8FF3146DF4E547EEF6ED /* Pods */,
+				83385BC8EA458AFDB2A73528 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E586F70021694B4A00209AE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E586F6FF21694B4A00209AE5 /* AirBud.app */,
+				E586F71321694B4B00209AE5 /* AirBudTests.xctest */,
+				E586F71E21694B4B00209AE5 /* AirBudUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E586F70121694B4A00209AE5 /* AirBud */ = {
+			isa = PBXGroup;
+			children = (
+				E586F73021694BD600209AE5 /* Model */,
+				E586F73121694BDD00209AE5 /* View */,
+				E586F73221694BE900209AE5 /* Controller */,
+				E586F70221694B4A00209AE5 /* AppDelegate.swift */,
+				E586F70621694B4A00209AE5 /* Main.storyboard */,
+				E586F70921694B4B00209AE5 /* Assets.xcassets */,
+				E586F70B21694B4B00209AE5 /* LaunchScreen.storyboard */,
+				E586F70E21694B4B00209AE5 /* Info.plist */,
+			);
+			path = AirBud;
+			sourceTree = "<group>";
+		};
+		E586F71621694B4B00209AE5 /* AirBudTests */ = {
+			isa = PBXGroup;
+			children = (
+				E586F71721694B4B00209AE5 /* AirBudTests.swift */,
+				E586F71921694B4B00209AE5 /* Info.plist */,
+			);
+			path = AirBudTests;
+			sourceTree = "<group>";
+		};
+		E586F72121694B4B00209AE5 /* AirBudUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E586F72221694B4B00209AE5 /* AirBudUITests.swift */,
+				E586F72421694B4B00209AE5 /* Info.plist */,
+			);
+			path = AirBudUITests;
+			sourceTree = "<group>";
+		};
+		E586F73021694BD600209AE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E586F735216957D200209AE5 /* AirService.swift */,
+				E586F7332169550000209AE5 /* CurrentAir.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E586F73121694BDD00209AE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E586F73221694BE900209AE5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E586F70421694B4A00209AE5 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E586F6FE21694B4A00209AE5 /* AirBud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E586F72721694B4B00209AE5 /* Build configuration list for PBXNativeTarget "AirBud" */;
+			buildPhases = (
+				36A13402110F2B2571A740AA /* [CP] Check Pods Manifest.lock */,
+				E586F6FB21694B4A00209AE5 /* Sources */,
+				E586F6FC21694B4A00209AE5 /* Frameworks */,
+				E586F6FD21694B4A00209AE5 /* Resources */,
+				17B543BB72AC50DCBF0B411A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirBud;
+			productName = AirBud;
+			productReference = E586F6FF21694B4A00209AE5 /* AirBud.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E586F71221694B4B00209AE5 /* AirBudTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E586F72A21694B4B00209AE5 /* Build configuration list for PBXNativeTarget "AirBudTests" */;
+			buildPhases = (
+				E586F70F21694B4B00209AE5 /* Sources */,
+				E586F71021694B4B00209AE5 /* Frameworks */,
+				E586F71121694B4B00209AE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E586F71521694B4B00209AE5 /* PBXTargetDependency */,
+			);
+			name = AirBudTests;
+			productName = AirBudTests;
+			productReference = E586F71321694B4B00209AE5 /* AirBudTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E586F71D21694B4B00209AE5 /* AirBudUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E586F72D21694B4B00209AE5 /* Build configuration list for PBXNativeTarget "AirBudUITests" */;
+			buildPhases = (
+				E586F71A21694B4B00209AE5 /* Sources */,
+				E586F71B21694B4B00209AE5 /* Frameworks */,
+				E586F71C21694B4B00209AE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E586F72021694B4B00209AE5 /* PBXTargetDependency */,
+			);
+			name = AirBudUITests;
+			productName = AirBudUITests;
+			productReference = E586F71E21694B4B00209AE5 /* AirBudUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E586F6F721694B4A00209AE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Mackenzie Kinzel";
+				TargetAttributes = {
+					E586F6FE21694B4A00209AE5 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					E586F71221694B4B00209AE5 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E586F6FE21694B4A00209AE5;
+					};
+					E586F71D21694B4B00209AE5 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E586F6FE21694B4A00209AE5;
+					};
+				};
+			};
+			buildConfigurationList = E586F6FA21694B4A00209AE5 /* Build configuration list for PBXProject "AirBud" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E586F6F621694B4A00209AE5;
+			productRefGroup = E586F70021694B4A00209AE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E586F6FE21694B4A00209AE5 /* AirBud */,
+				E586F71221694B4B00209AE5 /* AirBudTests */,
+				E586F71D21694B4B00209AE5 /* AirBudUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E586F6FD21694B4A00209AE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E586F70D21694B4B00209AE5 /* LaunchScreen.storyboard in Resources */,
+				E586F70A21694B4B00209AE5 /* Assets.xcassets in Resources */,
+				E586F70821694B4A00209AE5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E586F71121694B4B00209AE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E586F71C21694B4B00209AE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17B543BB72AC50DCBF0B411A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AirBud/Pods-AirBud-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirBud/Pods-AirBud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36A13402110F2B2571A740AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirBud-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E586F6FB21694B4A00209AE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E586F736216957D200209AE5 /* AirService.swift in Sources */,
+				E586F7342169550000209AE5 /* CurrentAir.swift in Sources */,
+				E586F70521694B4A00209AE5 /* HomeVC.swift in Sources */,
+				E586F70321694B4A00209AE5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E586F70F21694B4B00209AE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E586F71821694B4B00209AE5 /* AirBudTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E586F71A21694B4B00209AE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E586F72321694B4B00209AE5 /* AirBudUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E586F71521694B4B00209AE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E586F6FE21694B4A00209AE5 /* AirBud */;
+			targetProxy = E586F71421694B4B00209AE5 /* PBXContainerItemProxy */;
+		};
+		E586F72021694B4B00209AE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E586F6FE21694B4A00209AE5 /* AirBud */;
+			targetProxy = E586F71F21694B4B00209AE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E586F70621694B4A00209AE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E586F70721694B4A00209AE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E586F70B21694B4B00209AE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E586F70C21694B4B00209AE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E586F72521694B4B00209AE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E586F72621694B4B00209AE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E586F72821694B4B00209AE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0259BD9B0D1CAF5FDAB3E45 /* Pods-AirBud.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GBH98HJS99;
+				INFOPLIST_FILE = AirBud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackenziekinzel.AirBud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E586F72921694B4B00209AE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 240C026AC430CC218D277B79 /* Pods-AirBud.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GBH98HJS99;
+				INFOPLIST_FILE = AirBud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackenziekinzel.AirBud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E586F72B21694B4B00209AE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GBH98HJS99;
+				INFOPLIST_FILE = AirBudTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackenziekinzel.AirBudTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirBud.app/AirBud";
+			};
+			name = Debug;
+		};
+		E586F72C21694B4B00209AE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GBH98HJS99;
+				INFOPLIST_FILE = AirBudTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackenziekinzel.AirBudTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirBud.app/AirBud";
+			};
+			name = Release;
+		};
+		E586F72E21694B4B00209AE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GBH98HJS99;
+				INFOPLIST_FILE = AirBudUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackenziekinzel.AirBudUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AirBud;
+			};
+			name = Debug;
+		};
+		E586F72F21694B4B00209AE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GBH98HJS99;
+				INFOPLIST_FILE = AirBudUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackenziekinzel.AirBudUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AirBud;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E586F6FA21694B4A00209AE5 /* Build configuration list for PBXProject "AirBud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E586F72521694B4B00209AE5 /* Debug */,
+				E586F72621694B4B00209AE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E586F72721694B4B00209AE5 /* Build configuration list for PBXNativeTarget "AirBud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E586F72821694B4B00209AE5 /* Debug */,
+				E586F72921694B4B00209AE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E586F72A21694B4B00209AE5 /* Build configuration list for PBXNativeTarget "AirBudTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E586F72B21694B4B00209AE5 /* Debug */,
+				E586F72C21694B4B00209AE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E586F72D21694B4B00209AE5 /* Build configuration list for PBXNativeTarget "AirBudUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E586F72E21694B4B00209AE5 /* Debug */,
+				E586F72F21694B4B00209AE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E586F6F721694B4A00209AE5 /* Project object */;
+}
