@@ -62,4 +62,26 @@ class AirService {
             })
         }
     }
+    
+    func getTodaysTips(completion: @escaping (TodaysTips?) -> Void) {
+        
+        if let airURL = URL(string: "\(baseURL!)") {
+            
+            Alamofire.request(airURL).responseJSON(completionHandler: { (response) in
+                
+                if let jsonDictionary = response.result.value as? [String : Any] {
+                    
+                    if let currentTipDictionary = jsonDictionary["random_recommendations"] as? [String : Any] {
+                        
+                        let todaysTips = TodaysTips(tipDictionary: currentTipDictionary)
+                        
+                        completion(todaysTips)
+                        
+                    } else {
+                        completion(nil)
+                    }
+                }
+            })
+        }
+    }
 }
