@@ -20,16 +20,16 @@ class HomeVC: UIViewController {
     let APIKey = "a3b1088cb53a4273b0c958a43183cf55"
     let coordinate: (lat: Double, long: Double) = (41.0789035, -81.51971272299431)
     var airService: AirService!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         airService = AirService(APIKey: APIKey)
         
         airService.getCurrentAir { (currentAir) in
             
-                if let currentAir = currentAir {
-                    
-                  DispatchQueue.main.async {
+            if let currentAir = currentAir {
+                
+                DispatchQueue.main.async {
                     
                     if let aqi = currentAir.aqi {
                         self.aqiLabel.text = "\(aqi)"
@@ -48,14 +48,23 @@ class HomeVC: UIViewController {
                     } else {
                         self.pollutantLabel.text = "-"
                     }
+                }
+            }
+        }
+        
+        airService.getPollutantInfo { (pollutantInfo) in
+            
+            if let pollutantInfo = pollutantInfo {
+                
+                DispatchQueue.main.async {
                     
-                    if let sources = currentAir.sources {
+                    if let sources = pollutantInfo.sources {
                         self.sourcesLabel.text = "\(sources)"
                     } else {
                         self.sourcesLabel.text = "-"
                     }
                     
-                    if let effects = currentAir.effects {
+                    if let effects = pollutantInfo.effects {
                         self.effectsLabel.text = "\(effects)"
                     } else {
                         self.effectsLabel.text = "-"
@@ -65,4 +74,3 @@ class HomeVC: UIViewController {
         }
     }
 }
-

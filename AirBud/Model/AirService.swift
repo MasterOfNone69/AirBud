@@ -40,4 +40,26 @@ class AirService {
             })
         }
     }
+    
+    func getPollutantInfo(completion: @escaping (PollutantInfo?) -> Void) {
+
+        if let airURL = URL(string: "\(baseURL!)") {
+
+            Alamofire.request(airURL).responseJSON(completionHandler: { (response) in
+
+                if let jsonDictionary = response.result.value as? [String : Any] {
+
+                    if let currentPollutantDictionary = jsonDictionary["dominant_pollutant_text"] as? [String : Any] {
+
+                        let pollutantInfo = PollutantInfo(pollutantDictionary: currentPollutantDictionary)
+
+                        completion(pollutantInfo)
+
+                    } else {
+                        completion(nil)
+                    }
+                }
+            })
+        }
+    }
 }
